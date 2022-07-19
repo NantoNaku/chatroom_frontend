@@ -4,7 +4,7 @@ import { useState } from "react";
 import Chat from "../chat/Chat";
 
 const ENDPOINT = process.env.ENDPOINT || "https://localhost:5000";
-
+console.log(`Endpoint: ${ENDPOINT}`)
 const socket = io.connect(ENDPOINT);
 
 function Home() {
