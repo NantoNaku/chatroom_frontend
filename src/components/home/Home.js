@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "../chat/Chat";
 
-const ENDPOINT = process.env.ENDPOINT || "https://localhost:5000";
+const ENDPOINT = process.env.ENDPOINT || "https://bestplebackend.herokuapp.com/";
 console.log(`Endpoint: ${ENDPOINT}`)
 const socket = io.connect(ENDPOINT);
 
